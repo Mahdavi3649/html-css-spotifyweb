@@ -19,6 +19,7 @@ body {
   color: var(--primary-f);
 }
 
+/* main */
 .main-container {
   width: 100%;
   height: calc(100vh - 75px);
@@ -40,8 +41,58 @@ body {
   width: 100%;
   height: 60px;
   background-color: var(--head-color);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
+.upgrate {
+  border: 1px solid var(--primary-f);
+  color: var(--primary-f);
+  border-radius: 20px;
+  padding: 7px 30px;
+  margin-right: 25px;
+  text-decoration: none;
+}
+/* End main */
+
+#logo-big {
+  width: 100px;
+}
+/* main-nav */
+
+.nav-section {
+  width: 90%;
+  height: 80%;
+  margin: 8px auto;
+}
+
+.nav-item {
+  margin: 3px 0;
+  opacity: 80%;
+  transition: 1s;
+}
+
+.nav-item-icon {
+  width: 20px;
+}
+
+.nav-item-name {
+  text-decoration: none;
+  color: var(--font-gray);
+  display: inline-block;
+}
+
+.nav-menu {
+  margin: 15px 0;
+}
+
+.small-text {
+  font-size: 12px;
+}
+/* End main-nav */
+
+/* footer */
 .site-footer {
   width: 100%;
   height: 75px;
