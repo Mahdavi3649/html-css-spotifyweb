@@ -61,16 +61,14 @@ body {
 }
 /* main-nav */
 
-.nav-section {
-  width: 90%;
-  height: 80%;
-  margin: 8px auto;
-}
-
 .nav-item {
   margin: 3px 0;
   opacity: 80%;
   transition: 1s;
+}
+
+li.nav-item {
+  list-style: none;
 }
 
 .nav-item-icon {
@@ -81,6 +79,7 @@ body {
   text-decoration: none;
   color: var(--font-gray);
   display: inline-block;
+  margin: 0 4px;
 }
 
 .nav-menu {
@@ -89,6 +88,71 @@ body {
 
 .small-text {
   font-size: 12px;
+}
+
+.nav-playlists {
+  display: block;
+  margin-top: 15px;
+  width: 200px;
+}
+.new-playlist-button {
+  background-color: var(--font-gray);
+  color: var(--aside-color);
+  padding: 4px 7px;
+}
+
+.medium-text {
+  font-size: 13px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.new-playlist {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.playlist-container .playlist {
+  margin: 8px 0;
+}
+
+.playlist-name {
+  text-decoration: none;
+  color: var(--font-gray);
+}
+
+.nav-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 15px;
+}
+
+.top {
+  width: 100%;
+  height: 80%;
+}
+
+.bottom {
+  width: 100%;
+  height: 20%;
+}
+
+#download img {
+  width: 15px;
+  margin-bottom: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+#profile img {
+  background-color: #7f7f7f;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  vertical-align: middle;
 }
 /* End main-nav */
 
