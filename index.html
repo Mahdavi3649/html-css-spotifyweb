@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
     <title>Spotify Web</title>
 </head>
 <body>
@@ -134,14 +137,97 @@
             </nav>
 
             <div class="main-view">
-                <div class="main-view-top">
-                    <div class="small-text">
-                        <a href="" class="upgrate">effettua l'upgrade</a>
+                    <div class="main-view-top">
+                        <div class="small-text">
+                            <a href="" class="upgrate">effettua l'upgrade</a>
+                        </div>
                     </div>
+                <div class="main-view-menu">
+                        <ul class="menu-list-item small-text uppercase">
+                            <li class="active"><a href="#">In Evidenza</a>
+                                <div class="active-pointer"></div>
+                            </li>
+                            <li><a href="#">podcast</a></li>
+                            <li><a href="#">classifiche</a></li>
+                            <li><a href="#">generi e modo</a></li>
+                            <li><a href="#">nuove uscite</a></li>
+                            <li><a href="#">scopri</a></li>
+                        </ul>
                 </div>
-                <div class="main-view-menu"></div>
-                <div class="music-container">
-                    <section class="recently"></section>
+
+                <div class="music-gallery-container">
+                    <section class="recently-played">
+
+                        <h2 class="big-title">Recently played</h2>
+
+                        <div class="music-container">
+
+                            <div class="music-item">
+                                <div class="music-cover">
+                                    <img src="img/metal_lifting.jpg" alt="metal">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <div class="music-title small-title">Heavy Metal</div>
+                                <div class="music-artist small-text ">subtitle</div>
+                            </div>
+
+                            <div class="music-item">
+                                <div class="music-cover">
+                                    <img src="img/stranger.jpeg" alt="stranger">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <div class="music-title small-title">Stranger Things, Vol. 1 (a Netflix Original
+                                    Series Soundrack)</div>
+                                <div class="music-artist small-text">subtitle</div>
+                            </div>
+
+
+                            <div class="music-item">
+                                <div class="music-cover">
+                                    <img src="img/aquietplace.jpeg" alt="quiet">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <div class="music-title small-title">A quiet place</div>
+                                <div class="music-artist small-text">Subtitle</div>
+                            </div>
+
+                            <div class="music-item">
+                                <div class="music-cover">
+                                    <img src="img/split.jpeg" alt="split">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <div class="music-title small-title">Split</div>
+                                <div class="music-artist small-text">Subtitle</div>
+                            </div>
+
+                            <div class="music-item">
+                                <div class="music-cover">
+                                    <img src="img/cure.jpeg" alt="cure">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <div class="music-title small-title">A cure for wellness</div>
+                                <div class="music-artist small-text">Subtitle</div>
+                            </div>
+
+                            <div class="music-item">
+                                <div class="music-cover">
+                                    <img src="img/sinister.jpeg" alt="sinister">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <div class="music-title small-title">Sinister</div>
+                                <div class="music-artist small-text">Subtitle</div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+               
+                    
+                        
+                        
+                            
+                       
+                    
                     <section class="creato"></section>
                     <section class="poplari"></section>
                 </div>
