@@ -21,18 +21,17 @@ body {
 
 /* main */
 .main-container {
-  width: 100%;
   height: calc(100vh - 75px);
   display: flex;
 }
 .main-nav {
-  width: 15%;
+  width: 150px;
   height: calc(100vh - 75px);
   background-color: var(--aside-color);
 }
 
 .main-view {
-  width: 85%;
+  width: calc(100% - 150px);
   height: 100%;
   background-color: var(--main-color);
 }
@@ -242,4 +241,16 @@ img.playing-song-cover {
 
 .song-player-controls {
   display: flex;
+}
+
+/* media query */
+
+@media screen and (min-width: 568px) {
+  .main-nav {
+    width: 260px;
+  }
+
+  .main-view {
+    width: calc(100% - 260px);
+  }
 }
