@@ -15,8 +15,9 @@
 
     <main>
         <div class="main-container">
+
             <nav class="main-nav">
-                <div class="nav-section top">
+                <div class="top">
 
                     <div id="logo" class="nav-item">
                         <a href="#">
@@ -24,34 +25,21 @@
                         </a>
                     </div>
 
-                    <div class="nav-menu small-text">
-                        <ul>
-                            <li class="nav-item active">
-                                <a href="#">
-                                <img src="img/home.svg" class="nav-item-icon">
-                                    <div class="nav-item-name">
-                                        Home
-                                    </div>
-                                </a>
-                            </li>
+                    <div class="nav-menu small-text nav-item">
+                        <a href="#">
+                        <img src="img/home.svg" class="nav-item-icon">
+                            <span class="nav-item-name">Home</span>   
+                        </a>
 
-                            <li class="nav-item">
-                                <a href="#">
-                                    <img src="img/search.svg" class="nav-item-icon">
-                                        <div class="nav-item-name">
-                                            Cerca
-                                        </div>
-                                    </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#">
-                                    <img src="img/libreria.svg" class="nav-item-icon">
-                                        <div class="nav-item-name">
-                                            La tua libreria
-                                        </div>
-                                    </a>
-                            </li>
-                        </ul>
+                        <a href="#">
+                            <img src="img/search.svg" class="nav-item-icon">
+                                <span class="nav-item-name">Cerca</span>
+                        </a>
+
+                        <a href="#">
+                            <img src="img/libreria.svg" class="nav-item-icon">
+                                <span class="nav-item-name">La tua libreria</span>
+                        </a>
                     </div>
                     
                     <div class="nav-playlist">
@@ -114,10 +102,10 @@
                     </div>
                 </div>
 
-                <section class="nav-section small-text bottom">
+                <section class="small-text bottom">
                     <div id="download" class="nav-item">
                         <a href="#">
-                            <img src="img/download.svg" alt="">
+                            <img src="img/download.svg">
                             <div class="nav-item-name">
                                 Installa app
                             </div>
@@ -126,7 +114,7 @@
 
                     <div id="profile" class="nav-item">
                         <a href="#">
-                            <img src="img/profile.svg" alt="">
+                            <img src="img/profile.svg">
                             <div class="nav-item-name">
                                 John Doe
                             </div>
@@ -137,25 +125,28 @@
             </nav>
 
             <div class="main-view">
+                
                     <div class="main-view-top">
-                        <div class="small-text">
+                        <div class="small-text effettua">
                             <a href="" class="upgrate">effettua l'upgrade</a>
                         </div>
                     </div>
-                <div class="main-view-menu">
-                        <ul class="menu-list-item small-text uppercase">
-                            <li class="active"><a href="#">In Evidenza</a>
-                                <div class="active-pointer"></div>
-                            </li>
-                            <li><a href="#">podcast</a></li>
-                            <li><a href="#">classifiche</a></li>
-                            <li><a href="#">generi e modo</a></li>
-                            <li><a href="#">nuove uscite</a></li>
-                            <li><a href="#">scopri</a></li>
-                        </ul>
-                </div>
 
-                <div class="music-gallery-container">
+                    
+                    <div class="music-gallery-container">
+
+                    <div class="main-view-menu">
+                            <ul class="menu-list-item small-text uppercase">
+                                <li class="active"><a href="#">In Evidenza</a>
+                                    <div class="active-pointer"></div>
+                                </li>
+                                <li><a href="#">podcast</a></li>
+                                <li><a href="#">classifiche</a></li>
+                                <li><a href="#">generi e modo</a></li>
+                                <li><a href="#">nuove uscite</a></li>
+                                <li><a href="#">scopri</a></li>
+                            </ul>
+                    </div>
                     <section class="recently-played">
 
                         <h2 class="big-title">Recently played</h2>
@@ -220,16 +211,66 @@
                         </div>
                     </section>
 
+                    <section class="creato">
+                        <div class="big-title">
+                            <h2>Creato per John Doe</h2>
+                            <div class="small-text">Più ascolti, più accurati saranno i suggerimenti</div>
+                        </div>
+    
+                        <div class="music-container creato">
+    
+                            <div class="music-item">
+                                <div class="music-item-cover">
+                                    <img src="img/radar.jpeg" alt="radar">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <div class="music-title small-title">Release Radar</div>
+                            </div>
+    
+                            <div class="music-item">
+                                <div class="music-item-cover">
+                                    <img src="img/mixdaily.jpeg" alt="dailymix">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <div class="music-title small-title">Daily Mix 1</div>
+                            </div>
+                        </div>
+                        
+                    </section>
+                    <section class="popular-artists">
+                        <div class="big-title">
+                            <h2>Artisti più popolari</h2>
+                            <div class="small-text">Più ascolti, più accurati saranno i suggerimenti</div>
+                        </div>
+
+                        <div class="music-container">
+
+                            <div class="music-item">
+                                <div class="music-item-cover">
+                                    <img src="img/youg.jpeg" alt="young" class="round">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <div class="music-title small-title">Lana Del Rey</div>
+                            </div>
+
+                            <div class="music-item">
+                                <div class="music-item-cover">
+                                    <img src="img/einaudi.jpeg" alt="einaudi" class="round">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <div class="music-title small-title">Ludovico Einaudi</div>
+                            </div>
+
+                        </div>
+                    </section>
                 </div>
-               
+
                     
                         
                         
                             
                        
                     
-                    <section class="creato"></section>
-                    <section class="poplari"></section>
                 </div>
             </div>
         </div>
@@ -238,15 +279,17 @@
 
     <footer class="site-footer">
         <div class="play-bar">
-            <section class="play-bar-section left"> 
+            <section class="left"> 
                 <div class="playing-song">
-                    <div class="image-song">
+                    <a class="image-song">
                         <img class="playing-song-cover" src="img/sinister.jpeg">
-                    </div>
+                    </a>
+
                     <div class="playing-song-info">
                         <div class="playing-song-title small-text">Sinister</div>
                         <div class="playing-song-artist smaller-text">Brano Nome</div>
                     </div>
+
                     <div class="like">
                         <i class="fa-regular fa-heart"></i>
                     </div>
@@ -256,7 +299,7 @@
                 </div>
             </section>
             
-                <section class="play-bar-section center">
+                <section class="center">
 
                     <div class="song-player-controls">
                         <i class="fas fa-random"></i>
@@ -278,7 +321,7 @@
                     </div>
                 </section>
 
-                <section class="play-bar-section right">
+                <section class="right">
 
                     <div class="queque-device-container">
                         <i class="fas fa-list"></i>
@@ -287,10 +330,9 @@
 
                     <div class="volume-bar">
                         <i class="fas fa-volume-up"></i>
-                        <div class="bar">
                             <div class="bar-current"></div>
                             <div class="bar-pointer"></div>
-                        </div>
+                       
                     </div>
 
                 </section>
