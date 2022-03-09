@@ -112,6 +112,8 @@ body {
 .small-text {
   font-size: 12px;
   font-weight: bold;
+  text-align: center;
+  color: var(--font-gray);
 }
 
 .nav-playlists {
@@ -231,10 +233,17 @@ body {
   margin-top: 1rem;
 }
 
+.music-item {
+  display: flex;
+  width: calc((100% / 6) - 1rem);
+  flex-flow: column wrap;
+  align-items: center;
+}
+
 .music-title {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 15px;
   text-align: center;
   font-weight: bold;
 }
@@ -244,7 +253,7 @@ body {
 }
 
 .music-container {
-  margin-top: 10px;
+  margin: 22px 22px;
 }
 
 .music-cover > i {
@@ -364,24 +373,24 @@ img.playing-song-cover {
 /* media query */
 
 /* sm */
-@media screen and (min-width: 568px) {
-}
+
+/* @media screen and (min-width: 568px) {
+} */
 
 /* md */
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .main-nav {
     width: 260px;
-  }
+  } */
 
-  .main-view {
+/* .main-view {
     width: calc(100% - 260px);
-  }
-}
+  } */
 
 /* lg */
-@media screen and (min-width: 1200px) {
-}
+/* @media screen and (min-width: 1200px) {
+} */
 
 /* xl */
-@media screen and (min-width: 1440px) {
-}
+/* @media screen and (min-width: 1440px) {
+} */
