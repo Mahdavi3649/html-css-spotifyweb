@@ -246,7 +246,7 @@ body {
 
 .music-item {
   display: flex;
-  width: calc((100% / 6) - 1rem);
+  width: 100%;
   flex-flow: column wrap;
   align-items: center;
   padding: 1rem;
@@ -425,6 +425,12 @@ img.playing-song-cover {
 
 /* sm */
 
+@media screen and (min-width: 300px) {
+  .music-item {
+    width: calc(100% / 2);
+  }
+}
+
 @media screen and (min-width: 568px) {
   .music-item {
     width: calc(100% / 2);
@@ -442,17 +448,17 @@ img.playing-song-cover {
   }
 
   .music-item {
-    width: calc(100% / 3);
+    width: calc(100% / 4);
+  }
+
+  .main-view-menu {
+    display: none;
   }
 }
 
 /* lg */
 @media screen and (min-width: 1200px) {
   .music-item {
-    width: calc(100% / 4);
+    width: calc(100% / 6);
   }
 }
-
-/* xl */
-/* @media screen and (min-width: 1440px) {
-} */
