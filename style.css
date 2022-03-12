@@ -58,7 +58,7 @@ body {
 .upgrate {
   border: 1px solid var(--primary-f);
   color: var(--primary-f);
-  border-radius: 20px;
+  border-radius: 35px;
   padding: 7px 30px;
   margin-right: 25px;
   text-decoration: none;
@@ -89,18 +89,35 @@ body {
   color: var(--primary-f);
 }
 
-.nav-item .active-pointer {
-  position: absolute;
-  height: 35px;
-  width: 3px;
-  background-color: #cffc56;
-  top: -5px;
-  left: 0;
-  display: none;
-}
-
 .nav-item-icon {
   width: 20px;
+  animation: wiggle 2s linear infinite;
+}
+
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
 }
 
 .nav-item-name {
@@ -188,6 +205,7 @@ body {
   border-radius: 50%;
   vertical-align: middle;
 }
+
 /* End main-nav */
 
 /* main-view */
@@ -203,6 +221,21 @@ body {
 
 .effettua:hover {
   transform: scale(120%);
+}
+
+.upgrate:hover {
+  animation: rang 3s ease infinite;
+}
+
+@keyframes rang {
+  from {
+    color: var(--primary-f);
+    background-color: var(--head-color);
+  }
+  to {
+    color: #474973;
+    background-color: #a69cac;
+  }
 }
 
 .menu-list-item {
@@ -232,6 +265,24 @@ body {
   background-color: var(--line-hover);
   margin: auto;
   margin-top: 3px;
+  animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: rotateZ(-8deg);
+  }
+  10% {
+    transform: rotateZ(8deg);
+  }
+
+  30% {
+    transform: rotateZ(-8deg);
+  }
+
+  100% {
+    transform: rotateZ(0);
+  }
 }
 
 .row {
